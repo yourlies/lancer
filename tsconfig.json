@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "isolatedModules": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "stripInternal": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "/@/*": [
+        "src/*",
+      ],
+    },
+    "typeRoots": [
+      "./typings",
+      "../../node_modules/@types"
+    ],
+    "types": [
+      "vite/client"
+    ],
+    "lib": [
+      "ES2020",
+      "ES2019",
+      "ES2018",
+      "DOM",
+    ]
+  },
+  "exclude": [
+    "script",
+    "dist"
+  ]
+}
