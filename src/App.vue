@@ -1,6 +1,8 @@
 <template>
-  <div>{{ sad }}</div>
+  <div>
+    <ToButton>asdasd</ToButton>
+  </div>
 </template>
 <script lang="ts" setup>
-ref: sad = 123;
+import ToButton from './components/ToButtonRipple/index.vue';
 </script>
