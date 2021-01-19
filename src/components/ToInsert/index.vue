@@ -36,7 +36,10 @@ import { defineEmit } from 'vue';
 import validate from './validate';
 
 const curDate = new Date();
-const emit = defineEmit(['insert', 'close']);
+const emit = defineEmit<{
+  (e: 'insert', item: InputItem): void;
+  (e: 'close'): void;
+}>();
 ref: text = '';
 ref: date = `${curDate.getMonth() + 1}/${curDate.getDate()}`;
 ref: time = `${curDate.getHours()}:${curDate.getMinutes()}`;
