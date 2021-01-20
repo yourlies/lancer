@@ -74,7 +74,7 @@ const completeItem = (item: InsetItem) => {
   item.complete = true;
   console.log(123123);
 };
-const insertItem = <T extends InputItem | any>(item: T & InputItem) => {
+const insertItem = (item: any) => {
   const [month, day] = item.date.split('/');
   const inputItem: InsetItem = {
     type: item.type,
